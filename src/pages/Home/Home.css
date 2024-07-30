@@ -1,0 +1,77 @@
+.home{
+    width: 75%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.home .container{
+    padding: 30px;
+    animation: slideup .7s ease;
+}
+.home .home_head h1{
+    font-size: 40px;
+}
+.home_head p span{
+    font-size: 28px;
+    font-weight: 550;
+    
+}
+.home_head p span span{
+    /* color: blueviolet; */
+    text-decoration:underline;
+}
+.home_head p{
+    font-size: 18px;
+    margin-top: 30px;
+}
+.controlls{
+    margin-top: 30px;
+}
+.controlls .resume{
+    width:max-content;  
+    text-decoration: none;
+    padding: 8px 20px;
+    font-size: 20px;
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.resume ion-icon{
+    font-size: 28px;
+}
+.contact{
+    margin-top: 100px;
+}
+.contact p{
+    font-size: 20px;
+}
+.contact p span:nth-child(1){
+    font-weight: 600;
+}
+.contact p span:nth-child(2){
+    text-decoration: underline;
+}
+.contact .follow{
+    margin-top: 20px;
+}
+.follow a{
+    margin: 30px 20px 0 0;
+}
+
+@media screen and (max-width:767px) {
+    .home{
+        width: 100%;
+        align-items: flex-start;
+        padding: 0;
+    }
+}

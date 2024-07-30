@@ -1,0 +1,86 @@
+.skills{
+    width: 75%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.skills .container{
+    padding: 15px 30px;
+    animation: slideup .7s ease;
+    width: 100%;
+}
+.skills .container .title{
+    color: var(--main-color);
+    font-size: 50px;
+    font-weight: 400;
+    font-family: "Anek Odia", sans-serif;
+    font-optical-sizing: auto;
+}
+.skills_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+}
+.skills_container .skill_box{
+    width: 50%;
+    padding: 20px;
+    border: 2px dashed var(--main-color);
+    border-radius: 15px;
+    /* animation: slidedown .5s forwards ease-in-out;
+    animation-delay: .5s; */
+}
+.skill_box h2{
+    position: relative;
+    width: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    margin-bottom: 22px;
+}
+.skill_box h2::after{
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--main-color);
+}
+.skill_block{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.skill_box .skill{
+    width: max-content;  
+    /* border: 2px solid #333; */
+    padding: 10px 30px;
+    font-size: 45px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:767px) {
+    .skills{
+        width: 100%;
+        padding: 0;
+    }
+    .skills .container .title{
+        font-size: 43px;
+    }
+    .skills_container .skill_box{
+        width: 100%;
+    }
+}
